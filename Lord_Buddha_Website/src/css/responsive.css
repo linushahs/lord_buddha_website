@@ -1,0 +1,135 @@
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+  }
+
+  .hamburger > i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 1000;
+    margin-bottom: 2rem;
+  }
+
+  .hamburger > i.hide {
+    display: none;
+  }
+
+  /* right section of header  */
+  .header > .right {
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: white;
+    z-index: 10000;
+    transition: all 1000ms ease-in-out;
+  }
+
+  .header .nav {
+    margin: 3rem 0 1rem 0;
+    padding: 0;
+  }
+
+  /* Left part of header  */
+  .header .sub-nav {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .header .details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .header .icons > i {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  /* Right part of header  */
+  .header > .right > .nav > ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+    margin: 0;
+  }
+  .nav > ul > li.active {
+    border: none;
+    background-color: var(--primary-color);
+  }
+
+  .nav > ul > li.active > a {
+    color: white;
+  }
+  .nav > ul > li:hover {
+    border: none;
+  }
+
+  .header > .right > .line2 {
+    display: none;
+  }
+
+  .header > .right.hide {
+    display: none;
+  }
+
+  /* Services content section  */
+  .services .content {
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+  }
+
+  .services .main .left {
+    height: 50%;
+    width: 100%;
+  }
+
+  .services .left img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Why container responsive section  */
+  .why-container {
+    padding: 2rem 1rem;
+  }
+
+  .why-container > .left {
+    align-items: center;
+  }
+  .why-container > .right {
+    display: none;
+  }
+
+  /* courses container  */
+  .four-flex-container {
+    padding: 0;
+  }
+
+  /* testimonial container  */
+  .testimonial {
+    padding: 2rem 2rem;
+  }
+
+  /* footer container  */
+  .footer {
+    flex-direction: column;
+  }
+  .footer p {
+    word-spacing: 2px;
+  }
+}
